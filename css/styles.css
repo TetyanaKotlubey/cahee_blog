@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap');
+a, button
+{
+    transition: all .3s ease-in-out;
+}
+*
+{
+    box-sizing: border-box;
+}
+html
+{
+    font-size: 10px;
+}
+body
+{
+    font-family: 'Raleway', sans-serif; 
+    background-color: #b07cf7; 
+    color: #fff; 
+}
+.container
+{
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+h1
+{
+    font-size: 9rem;
+    margin: 10rem 0 3rem;
+    text-align: center;
+}
+p
+{
+    max-width: 570px;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+}
+.blog
+{
+    margin: 4.5rem auto;
+    justify-content: space-between;
+}
+.blog__block
+{
+    position: relative;
+    width: 100%;
+    padding-top: 80%; /*помнить, что это очень важно, иначе не работает */
+    overflow: hidden;
+    margin: 0 auto; 
+    
+}
+.blog__block img
+{
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.blog__block::before
+{
+    display: block;
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    padding-top: 40%; 
+    z-index: 1;
+    background: linear-gradient(180deg, rgb(0, 0, 0, 0.01) 0%, rgba(0, 0, 0, 0.9) 100%);
+}
+.blog__block time
+{
+    display: block;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 3.2rem;
+    font-weight: 700;
+    border-radius: 5px;
+    width: 17%;
+    padding: 0.25em 0.15em;
+    text-align: center;
+    line-height: 0.7;
+    top: 0%;
+    left: 0%;
+    transform: translate(45%, 45%);
+}
+.blog__block time span
+{
+    font-size: 2.1rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+.blog__block__area
+{
+    display: block;
+    margin: 12rem 0 0 2rem;
+    width: 85%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(0, 80%);
+    z-index: 2;
+}
+.blog__block__area__title
+{
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.2;
+
+}
+.blog__block__area__text
+{
+    font-weight: 300;
+    font-size: 1.3rem;
+    margin-top: 1.8rem;
+}
+.btn
+{
+    color: inherit;
+    display: block;
+    max-width: 200px;
+    background-color: #f72b3b;
+    padding: 1.8rem 0;
+    margin: 0 auto 12rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 2px solid  #f72b3b;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 300;
+}
+.btn:hover,
+.btn:focus,
+.btn:active
+{
+    background-color: transparent;
+    border-color: #fff;
+} 
+
+
